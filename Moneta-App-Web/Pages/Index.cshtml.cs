@@ -9,7 +9,12 @@ public class IndexModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
     private readonly ApplicationDbContext _context;
-    public IEnumerable<Users> Users { get; set; }
+    public IEnumerable<Transactions> many_transactions { get; set; }
+    [BindProperty]
+    public Transactions transaction { get; set; }
+
+    [BindProperty]
+    public Categories category { get; set; }
     public IndexModel(ILogger<IndexModel> logger, ApplicationDbContext context)
     {
         _logger = logger;
@@ -18,6 +23,24 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-        Users = _context.Users;
+        many_transactions = _context.Transactions;
+    }
+
+    public async void OnPost(Transactions transaction, Categories category)
+    {
+        if (transaction != null)
+        {
+            transaction.user_id = 1;
+            await _context.Transactions.AddAsync(transaction);
+            await _context.SaveChangesAsync();
+        }
+        if (category != null)
+        {
+            await _context.Categories.AddAsync(category);
+            await _context.SaveChangesAsync();
+        }
+
+
     }
 }
+
