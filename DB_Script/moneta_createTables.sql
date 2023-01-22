@@ -1,4 +1,3 @@
-DROP database moneta_db;
 create database moneta_db;
 use moneta_db;
 
