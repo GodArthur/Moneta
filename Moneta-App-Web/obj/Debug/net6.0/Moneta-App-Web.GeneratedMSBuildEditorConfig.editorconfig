@@ -5,52 +5,53 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Moneta_App_Web
 build_property.RootNamespace = Moneta_App_Web
-build_property.ProjectDir = C:\Users\Cedric Paradis\Documents\ConUHack\Moneta\Moneta-App-Web\
+build_property.ProjectDir = C:\Users\Kojo\Documents\CompSci\ConU_Hacks\Moneta\Moneta-App-Web\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Cedric Paradis\Documents\ConUHack\Moneta\Moneta-App-Web
+build_property.MSBuildProjectDirectory = C:\Users\Kojo\Documents\CompSci\ConU_Hacks\Moneta\Moneta-App-Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Cedric Paradis/Documents/ConUHack/Moneta/Moneta-App-Web/Pages/Error.cshtml]
+[C:/Users/Kojo/Documents/CompSci/ConU_Hacks/Moneta/Moneta-App-Web/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Cedric Paradis/Documents/ConUHack/Moneta/Moneta-App-Web/Pages/Homepage.cshtml]
+[C:/Users/Kojo/Documents/CompSci/ConU_Hacks/Moneta/Moneta-App-Web/Pages/Homepage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Cedric Paradis/Documents/ConUHack/Moneta/Moneta-App-Web/Pages/Index.cshtml]
+[C:/Users/Kojo/Documents/CompSci/ConU_Hacks/Moneta/Moneta-App-Web/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Cedric Paradis/Documents/ConUHack/Moneta/Moneta-App-Web/Pages/Login.cshtml]
+[C:/Users/Kojo/Documents/CompSci/ConU_Hacks/Moneta/Moneta-App-Web/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Cedric Paradis/Documents/ConUHack/Moneta/Moneta-App-Web/Pages/Privacy.cshtml]
+[C:/Users/Kojo/Documents/CompSci/ConU_Hacks/Moneta/Moneta-App-Web/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Cedric Paradis/Documents/ConUHack/Moneta/Moneta-App-Web/Pages/Receipt.cshtml]
+[C:/Users/Kojo/Documents/CompSci/ConU_Hacks/Moneta/Moneta-App-Web/Pages/Receipt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjZWlwdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Cedric Paradis/Documents/ConUHack/Moneta/Moneta-App-Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Kojo/Documents/CompSci/ConU_Hacks/Moneta/Moneta-App-Web/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Cedric Paradis/Documents/ConUHack/Moneta/Moneta-App-Web/Pages/_ViewImports.cshtml]
+[C:/Users/Kojo/Documents/CompSci/ConU_Hacks/Moneta/Moneta-App-Web/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Cedric Paradis/Documents/ConUHack/Moneta/Moneta-App-Web/Pages/_ViewStart.cshtml]
+[C:/Users/Kojo/Documents/CompSci/ConU_Hacks/Moneta/Moneta-App-Web/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Cedric Paradis/Documents/ConUHack/Moneta/Moneta-App-Web/Pages/Shared/_Layout.cshtml]
+[C:/Users/Kojo/Documents/CompSci/ConU_Hacks/Moneta/Moneta-App-Web/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-mxf59n6ate

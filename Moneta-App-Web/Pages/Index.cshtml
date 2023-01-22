@@ -5,6 +5,7 @@
 }
 
 <div class="text-center">
+    <a asp-page="Homepage"><button class="btn btn-primary">Create</button></a>
     @foreach(var obj in Model.Users)
     {
         <p>@obj.first_name</p>

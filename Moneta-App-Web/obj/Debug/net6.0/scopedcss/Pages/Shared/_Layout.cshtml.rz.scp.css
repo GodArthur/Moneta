@@ -8,7 +8,12 @@ a.navbar-brand[b-mxf59n6ate] {
 }
 
 a[b-mxf59n6ate] {
-  color: #0077cc;
+  color: red;
+}
+
+img[b-mxf59n6ate]{
+    width: 20%;
+    height: auto;
 }
 
 .btn-primary[b-mxf59n6ate] {
