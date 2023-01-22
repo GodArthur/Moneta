@@ -10,6 +10,7 @@ public class IndexModel : PageModel
     private readonly ILogger<IndexModel> _logger;
     private readonly ApplicationDbContext _context;
     public IEnumerable<Transactions> many_transactions { get; set; }
+    public IEnumerable<Categories> many_categories { get; set; }
     [BindProperty]
     public Transactions transaction { get; set; }
 
@@ -24,21 +25,26 @@ public class IndexModel : PageModel
     public void OnGet()
     {
         many_transactions = _context.Transactions;
+        many_categories= _context.Categories;
     }
 
-    public async void OnPost(Transactions transaction, Categories category)
+    public async Task<IActionResult> OnPost(Transactions transaction, Categories category)
     {
         if (transaction != null)
         {
             transaction.user_id = 1;
             await _context.Transactions.AddAsync(transaction);
             await _context.SaveChangesAsync();
+
+            return RedirectToPage("Index");
         }
         if (category != null)
         {
             await _context.Categories.AddAsync(category);
             await _context.SaveChangesAsync();
+            return RedirectToPage("Index");
         }
+        return RedirectToPage("Index");
 
 
     }

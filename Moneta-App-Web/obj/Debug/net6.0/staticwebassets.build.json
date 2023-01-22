@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Vg0tKXmTiFHZDPmLu3eyhLGRXgVhhygJuy1Nhdbx7+U=",
+  "Hash": "WR/wsKBQy9CrLzbjmcd52rCMB4AW5aXCBhNur5O5U40=",
   "Source": "Moneta-App-Web",
   "BasePath": "_content/Moneta-App-Web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Cedric Paradis\\Documents\\ConUHack\\Moneta\\Moneta-App-Web\\wwwroot\\images\\moneta_logo.png",
+      "SourceId": "Moneta-App-Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Cedric Paradis\\Documents\\ConUHack\\Moneta\\Moneta-App-Web\\wwwroot\\",
+      "BasePath": "_content/Moneta-App-Web",
+      "RelativePath": "images/moneta_logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\moneta_logo.png"
     },
     {
       "Identity": "C:\\Users\\Cedric Paradis\\Documents\\ConUHack\\Moneta\\Moneta-App-Web\\wwwroot\\js\\site.js",
