@@ -2146,26 +2146,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Cedric Paradis\\.nuget\\packages\\": {}
+    "/Users/ravishmahajan/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cedric Paradis\\Documents\\ConUHack\\Moneta-App\\Moneta-App-Web\\Moneta-App-Web.csproj",
+      "projectUniqueName": "/Users/ravishmahajan/ConU'23/Moneta/Moneta-App-Web/Moneta-App-Web.csproj",
       "projectName": "Moneta-App-Web",
-      "projectPath": "C:\\Users\\Cedric Paradis\\Documents\\ConUHack\\Moneta-App\\Moneta-App-Web\\Moneta-App-Web.csproj",
-      "packagesPath": "C:\\Users\\Cedric Paradis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cedric Paradis\\Documents\\ConUHack\\Moneta-App\\Moneta-App-Web\\obj\\",
+      "projectPath": "/Users/ravishmahajan/ConU'23/Moneta/Moneta-App-Web/Moneta-App-Web.csproj",
+      "packagesPath": "/Users/ravishmahajan/.nuget/packages/",
+      "outputPath": "/Users/ravishmahajan/ConU'23/Moneta/Moneta-App-Web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Cedric Paradis\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/ravishmahajan/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2208,7 +2206,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\6.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
       }
     }
   }
