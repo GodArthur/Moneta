@@ -2151,11 +2151,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Cedric Paradis\\Documents\\ConUHack\\Moneta-App\\Moneta-App-Web\\Moneta-App-Web.csproj",
+      "projectUniqueName": "C:\\Users\\Cedric Paradis\\Documents\\ConUHack\\Moneta\\Moneta-App-Web\\Moneta-App-Web.csproj",
       "projectName": "Moneta-App-Web",
-      "projectPath": "C:\\Users\\Cedric Paradis\\Documents\\ConUHack\\Moneta-App\\Moneta-App-Web\\Moneta-App-Web.csproj",
+      "projectPath": "C:\\Users\\Cedric Paradis\\Documents\\ConUHack\\Moneta\\Moneta-App-Web\\Moneta-App-Web.csproj",
       "packagesPath": "C:\\Users\\Cedric Paradis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Cedric Paradis\\Documents\\ConUHack\\Moneta-App\\Moneta-App-Web\\obj\\",
+      "outputPath": "C:\\Users\\Cedric Paradis\\Documents\\ConUHack\\Moneta\\Moneta-App-Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Cedric Paradis\\AppData\\Roaming\\NuGet\\NuGet.Config",

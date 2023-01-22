@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y5l4ioDpj1HomahO46sE+/s/dXMA/Ma2zuBt+XVXzd2L6GgZA6QIoa3+qjSch024xpqsB/0fTgZj8ClJ/+M4Bw==",
+  "dgSpecHash": "okIJHVw+id5clB8IcOsc50TcHITD7furFzCoxh2sPz2z7PW+FCKId5Y0pD1BIbIXez1juWDAW/uTyp0m8ilDDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Cedric Paradis\\Documents\\ConUHack\\Moneta-App\\Moneta-App-Web\\Moneta-App-Web.csproj",
+  "projectFilePath": "C:\\Users\\Cedric Paradis\\Documents\\ConUHack\\Moneta\\Moneta-App-Web\\Moneta-App-Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cedric Paradis\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\Cedric Paradis\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
