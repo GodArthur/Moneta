@@ -3,10 +3,202 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<div class="text-center">
-    @foreach(var obj in Model.Users)
-    {
-        <p>@obj.first_name</p>
-    }
+<div id="app">
+    <h2>Track your spending</h2>
+    <div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">New Transaction</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+                        <button type="button" style="display: inline-block; margin: 0" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">New Transaction</h4>
+        </div>
+        <div class="modal-body">
+                        <form method="post">
+                            <div class="form-group">
+                                <label asp-for="transaction.total_spent"></label>
+                                <input asp-for="transaction.total_spent" class="form-control" />
+                                <span asp-validation-for="transaction.total_spent" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="transaction.transaction_date"></label>
+                                <input asp-for="transaction.transaction_date" class="form-control" />
+                                <span asp-validation-for="transaction.transaction_date" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="transaction.category"></label>
+                                <input asp-for="transaction.category" class="form-control" />
+                                <span asp-validation-for="transaction.category" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="transaction.company"></label>
+                                <input asp-for="transaction.company" class="form-control" />
+                                <span asp-validation-for="transaction.company" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Submit" class="btn btn-primary" />
+                            </div>
+                        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
 </div>
+        
+  <br />      
+
+    <div class="container">
+        <!-- Trigger the modal with a button -->
+        <button type="button"  style="display: inline-block; margin: 0" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">New Category</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal1" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">New Category</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post">
+                            <div class="form-group">
+                                <label asp-for="category.category_name"></label>
+                                <input asp-for="category.category_name" class="form-control" />
+                                <span asp-validation-for="category.category_name" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Submit" class="btn btn-primary" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="container">
+        <!-- Trigger the modal with a button -->
+        <button type="button" style="display: inline-block; margin: 0; float:right;"  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Check history</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Transaction History</h4>
+                    </div>
+                    <div class="modal-body">
+                        <table>
+                            <tr>
+                                <th>Transaction Number</th>
+                                <th>Transaction cost</th>
+                                <th>Category of the transaction</th>
+                                <th>Company of the transaction</th>
+                                <th>Date of the transaction</th>
+                            </tr>
+                            @if (Model.many_transactions != null){
+                            @foreach(var obj in Model.many_transactions)
+                            {
+                                
+                            
+                            <tr>
+                                <td>@obj.transaction_id</td>
+                                <td>@obj.total_spent</td>
+                                <td>@obj.category</td>
+                                <td>@obj.company</td>
+                                <td>@obj.transaction_date</td>
+
+                            </tr>
+                                }
+                            }
+                            else
+                            {
+                                <td>No transaction have been done.</td>
+                            }
+                        </table>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    
+
+</div>
+
+
+<div>
+    <canvas id="myChart" height="200" weight="200" style="height:500px; width:500px;"></canvas>
+</div>
+
+
+<script>
+    const { createApp } = Vue
+
+    createApp({
+        data() {
+            return {
+                showForm: false,
+                showCategory: false
+            }
+        }
+    }).mount('#app')
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Food', 'Bills', 'Subscriptions', 'Appliances', 'Transportation', 'Restaurant'],
+            datasets: [{
+                label: 'amount of money',
+                data: [120.3, 230.2, 30, 52.3, 28.5, 31],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
