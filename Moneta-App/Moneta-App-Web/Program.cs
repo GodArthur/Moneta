@@ -1,10 +1,12 @@
+using Microsoft.EntityFrameworkCore;
 using Moneta_App_Web.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<ApplicationDbContext>;
+builder.Services.AddDbContext<ApplicationDbContext>(options=>options.UseMySQL(
+builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
