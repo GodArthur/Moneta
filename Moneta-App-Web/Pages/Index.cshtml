@@ -27,7 +27,7 @@
                         <form method="post">
                             <div class="form-group">
                                 <label asp-for="transaction.total_spent"></label>
-                                <input asp-for="transaction.total_spent" class="form-control" />
+                                <input type="number" step="0.01" asp-for="transaction.total_spent" class="form-control" />
                                 <span asp-validation-for="transaction.total_spent" class="text-danger"></span>
                             </div>
                             <div class="form-group">
@@ -60,7 +60,7 @@
   
 </div>
         
-  <br />      
+  <br>      
 
     <div class="container">
         <!-- Trigger the modal with a button -->
@@ -179,15 +179,23 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
+    var Price = [];
+    var Category = [];
+    @foreach(var item in Model.many_transactions)
+    {
+        @:Price.push(@item.total_spent);
+    }
+   
+    console.log(Price);
     const ctx = document.getElementById('myChart');
 
     new Chart(ctx, {
         type: 'pie',
         data: {
-            labels: ['Food', 'Bills', 'Subscriptions', 'Appliances', 'Transportation', 'Restaurant'],
+            labels: ['Food','Bills','Electronics','Travel'],
             datasets: [{
                 label: 'amount of money',
-                data: [120.3, 230.2, 30, 52.3, 28.5, 31],
+                data: Price,
                 borderWidth: 1
             }]
         },
